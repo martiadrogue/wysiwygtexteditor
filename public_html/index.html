@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WYSISWYG Editor</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- https://www.youtube.com/watch?v=mysAB7NAjDk -->
+</head>
+<body onLoad="iFrameOn();">
+  <div class="content">
+    <h1>My web application that intakes data from users</h1>
+    <form id="article" action="" method="post">
+      <div>
+        <label for="title"></label>
+        <input type="text" name="title" id="title" size="70" maxlength="70">
+      </div>
+      <div>
+        <label for="body"></label>
+        <div class="toolbar">
+          <input type="button" value="B" onClick="iBold()" tabindex="-1">
+          <input type="button" value="U" onClick="iUnderline()" tabindex="-1">
+          <input type="button" value="I" onClick="iItalic()" tabindex="-1">
+          <input type="button" value="Text Size" onClick="iFontSize()" tabindex="-1">
+          <input type="button" value="Text Color" onClick="iFontColor()" tabindex="-1">
+          <input type="button" value="HR" onClick="iHorizontalRule()" tabindex="-1">
+          <input type="button" value="UL" onClick="iUnorderedList()" tabindex="-1">
+          <input type="button" value="OL" onClick="iOrderedList()" tabindex="-1">
+          <input type="button" value="Link" onClick="iLink()" tabindex="-1">
+          <input type="button" value="UnLink" onClick="iUnLink()" tabindex="-1">
+          <input type="button" value="Image" onClick="iImage()" tabindex="-1">
+        </div>
+        <textarea name="body" id="body" cols="100" rows="14"></textarea>
+        <iframe name="wordProcessor" id="wordProcessor"></iframe>
+      </div>
+      <input type="button" value="Submit Data" onClick="javascript:submit_form()">
+    </form>
+  </div>
+</body>
+</html>

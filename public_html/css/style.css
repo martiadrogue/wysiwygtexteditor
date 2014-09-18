@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.content {
+  width: 800px;
+  margin: auto;
+}
+
+input {
+  font-family: inherit;
+  font-size: 1.2rem;
+  margin: 5px 0;
+  padding: 8px;
+  outline: none;
+  /* Font styles for #wordProcessor are in main.js function iFrameOn() */
+}
+
+#wordProcessor,
+input[type="text"] {
+  border: #aaa 1px dashed;
+}
+
+#wordProcessor {
+  width: 800px;
+  height: 400px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+textarea#body {
+  display: none;
+}
